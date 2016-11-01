@@ -33,7 +33,7 @@ class Body {
     }
 
     /**
-     * 引数が2つあるコンストラクタ
+     * 引数がないコンストラクタ
      */
     Body() {
         this.weight = 50.0 + Math.random() * 50.0;
