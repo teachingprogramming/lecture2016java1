@@ -1,4 +1,4 @@
-class Lecture03 {
+class Lesson03 {
     public static void main(String[] args) {
         // クラスを使わない例
         double taro_height = 1.7; // タローの身長

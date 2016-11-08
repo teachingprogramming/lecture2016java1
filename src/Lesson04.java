@@ -1,4 +1,4 @@
-class Lecture04 {
+class Lesson04 {
     public static void main(String[] args) {
         Body taro = new Body();
         taro.weight = 70.0;
