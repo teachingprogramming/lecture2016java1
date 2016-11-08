@@ -1,6 +1,6 @@
 package lesson05.d00000;
 
-class Book {
+public class Book {
     String title;
     String author;
     int price;
@@ -8,7 +8,7 @@ class Book {
     /**
      * コンストラクタ
      */
-    Book(String title, String author, int price) {
+    public Book(String title, String author, int price) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -17,7 +17,7 @@ class Book {
     /**
      * 情報を表示するメソッド
      */
-    void printInfo() {
+    public void printInfo() {
         System.out.println("タイトル: "+title);
         System.out.println("著者: "+author);
         System.out.println("税抜き価格: "+price);
