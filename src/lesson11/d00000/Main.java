@@ -41,7 +41,7 @@ public class Main {
         bookAndComicList.add(new Comic("ドラゴンボール", "鳥山", 500, 2));
         int totalPrice2 = 0;
         for (Book b : bookAndComicList) {
-            totalPrice2 = b.price;
+            totalPrice2 += b.price;
         }
         System.out.println("合計金額は" + totalPrice2 + "円です。");
 
