@@ -1,9 +1,11 @@
 package lesson11.d00000;
 
-public class Book {
+import lesson12.d00000.Product;
+
+public class Book implements Product{
     public String title;
     public String author;
-    public int price;
+    private int price;
 
     public Book(String title, String author, int price) {
         this.title = title;
@@ -20,4 +22,15 @@ public class Book {
     public String toString() {
         return getInfo();
     }
+
+    @Override
+    public int getPrice() {
+        return price;
+    }
+
+    @Override
+    public String getName() {
+        return title + "（" + author + "）";
+    }
+
 }
