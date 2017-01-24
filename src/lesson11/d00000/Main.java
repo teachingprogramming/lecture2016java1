@@ -21,10 +21,10 @@ public class Main {
         int totalPrice1 = 0;
         for (int i=0; i<bookList.size(); i++) {
             Book b = bookList.get(i);
-            totalPrice1 += b.price;
+            totalPrice1 += b.getPrice();
         }
         for (Comic c : comicList) { // 拡張for文[教科書P.170]
-            totalPrice1 += c.price;
+            totalPrice1 += c.getPrice();
         }
         System.out.println("合計金額は" + totalPrice1 + "円です。");
 
@@ -41,7 +41,7 @@ public class Main {
         bookAndComicList.add(new Comic("ドラゴンボール", "鳥山", 500, 2));
         int totalPrice2 = 0;
         for (Book b : bookAndComicList) {
-            totalPrice2 += b.price;
+            totalPrice2 += b.getPrice();
         }
         System.out.println("合計金額は" + totalPrice2 + "円です。");
 
