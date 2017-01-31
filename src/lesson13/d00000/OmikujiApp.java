@@ -16,17 +16,18 @@ public class OmikujiApp extends Application implements EventHandler<ActionEvent>
     private Label resultLabel;
     @Override
     public void start(Stage primaryStage) throws Exception {
+        // テキストフィールド（名前入力）
         nameTextField = new TextField();
         nameTextField.setText("名前");
         nameTextField.relocate(10, 10);
 
-        // カウントボタン
+        // ボタン（占う）
         divineButton = new Button();
         divineButton.setText("占う");
         divineButton.relocate(10, 40);
         divineButton.setOnAction(this);
 
-        // ラベル
+        // ラベル（結果表示）
         resultLabel = new Label();
         resultLabel.setText("結果がここに表示されます。");
         resultLabel.relocate(10, 70);
@@ -41,15 +42,14 @@ public class OmikujiApp extends Application implements EventHandler<ActionEvent>
         Scene scene = new Scene(pane, 250, 200);
         primaryStage.setScene(scene); // シーンにペインをセット
 
-        // 最初はこれだけ
-        primaryStage.setTitle("カウンター");
+        primaryStage.setTitle("占い");
         primaryStage.show();
     }
 
     @Override
     public void handle(ActionEvent event) {
         int rand = (int)Math.floor(Math.random()*3.0); // 0, 1, 2
-        String result = "";
+        String result;
         if (rand == 0) {
             result = "大吉";
         } else if (rand == 1) {
