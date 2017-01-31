@@ -25,14 +25,14 @@ public class CounterApp extends Application implements EventHandler<ActionEvent>
         // カウントボタン
         countButton = new Button();
         countButton.setText("カウント");
-        countButton.setOnAction(this);
         countButton.relocate(10, 40);
+        countButton.setOnAction(this);
 
         // リセットボタン
         resetButton = new Button();
         resetButton.setText("リセット");
-        resetButton.setOnAction(this);
         resetButton.relocate(10, 70);
+        resetButton.setOnAction(this);
 
         // ペイン（レイアウト）
         Pane pane = new Pane();
